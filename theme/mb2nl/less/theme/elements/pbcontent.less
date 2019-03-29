@@ -1,0 +1,452 @@
+
+/* Layout */
+
+.mb2-pb-content.nocarousel {
+	&.cols {
+		.mb2-pb-content-list {
+			margin-left: -15px;
+			margin-right: -15px;
+		}
+
+
+		.mb2-pb-content-item {
+			float: left;
+			padding-left: 15px;
+			padding-right: 15px;
+			margin-bottom: 30px;
+		}
+	}
+
+	&.cols.gwidth-thin {
+		.mb2-pb-content-list {
+			margin-left: -2px;
+			margin-right: -2px;
+		}
+
+
+		.mb2-pb-content-item {
+			padding-left: 2px;
+			padding-right: 2px;
+			margin-bottom: 4px;
+		}
+	}
+}
+
+
+@media only screen and (max-width:768px){
+	.mb2-pb-content {
+		&.cols.multicol {
+			.mb2-pb-content-item {
+				width: 50% !important;
+			}
+		}
+	}
+}
+
+
+@media only screen and (max-width:480px){
+	.mb2-pb-content {
+		&.cols,
+		&.cols.multicol {
+			.mb2-pb-content-item {
+				width: 100% !important;
+			}
+		}
+	}
+}
+
+
+
+/* Elements */
+
+.mb2-pb-content-img {
+	margin-bottom: 15px;
+}
+
+.mb2-pb-content-item-b {
+	padding-top: 10px;
+}
+
+.mb2-pb-content-readmore {
+	padding-top: 15px;
+}
+
+
+.mb2-pb-content-title {
+	margin: 0;
+
+	a {
+		color: @headingscolor;
+
+		&:hover,
+		&:focus {
+			color: @linkcolor;
+		}
+	}
+}
+
+.mb2-pb-content-details {
+	font-size: @fssmall;
+}
+
+.color-el {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: .8;
+}
+
+
+.mb2-pb-content-price {
+	color: @accent1;
+	font-size: @fsheading4;
+	font-weight: @fwheadings;
+	padding-top: 15px;
+
+	.freeprice {
+		color: green;
+	}
+
+	.oldprice {
+		font-size: @fsbase;
+		color: @textcolor_lighten;
+		margin: 0 3px;
+	}
+}
+
+
+
+
+
+
+/* ====================== PRE STYLE - NLEARNING ====================== */
+
+
+.mb2-pb-content.nlearning {
+
+	.mb2-pb-content-item-inner {
+		position: relative;
+		overflow: hidden;
+		text-align: center;
+	}
+
+
+	.mb2-pb-content-title {
+
+		color: #fff;
+		margin-bottom: 25px;
+
+      	a {
+			color: #fff;
+			&:hover,
+			&:focus {
+				color: #fff;
+			}
+		}
+
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: -10px;
+			left: 50%;
+			margin-left: -30px;
+			width: 60px;
+			height: 1px;
+			border-bottom: solid 1px #fff;
+			.mb2_transition1(all, .25s);
+		}
+	}
+
+
+	.mb2-pb-content-details {
+		color: #fff;
+		font-size: @fsgeneral;
+	}
+
+
+	.mb2-pb-content-img {
+		margin: 0;
+
+		img {
+			.mb2_transition1(all, .25s);
+		}
+	}
+
+	.mb2-pb-content-item:hover {
+		.mb2-pb-content-img {
+			img {
+				.mb2_trabsform_scale(1.15);
+			}
+		}
+
+		.mb2-pb-content-title {
+			&:after {
+				width: 100%;
+				left: 0;
+				margin-left: 0;
+			}
+		}
+	}
+
+	.mb2-pb-content-item-b {
+		display: none;
+	}
+
+	.mb2-pb-content1 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	.mb2-pb-content2 {
+		display: table;
+		width: 100%;
+		height: 100%;
+	}
+
+
+	.mb2-pb-content3 {
+		display: table-cell;
+		vertical-align: middle;
+		background-color: fade(@accent1,60%);
+
+		.color & {
+			background-color: transparent;
+		}
+	}
+
+	.mb2-pb-content4 {
+		padding: 0 10px;
+	}
+
+	.mb2-pb-content-title,
+	.mb2-pb-content-details {
+		position: relative;
+		z-index: 1;
+	}
+
+
+	.color .color-el {
+		display: block;
+		opacity: .6;
+	}
+
+
+
+}
+
+
+
+
+
+/* ====================== PRE STYLE - COGNITIO ====================== */
+
+
+.mb2-pb-content.cognitio {
+
+	.mb2-pb-content-item-inner {
+		overflow: hidden;
+		margin: 0 2px 3px 2px;
+		.mb2_box_shadow(0 2px 1px 0, rgba(0,0,0,.1));
+		.mb2_border_radius(0 0 3px 3px);
+	}
+
+
+	.mb2-pb-content-item-b {
+		padding: 15px 15px 20px 15px;
+		background-color: @color_gray2;
+		border: solid 1px @color_box_border;
+		border-top: 0;
+		.mb2_border_radius(0 0 3px 3px);
+		text-align: center;
+	}
+
+
+	.mb2content-details {
+		height: 40px;
+		line-height: 40px;
+		background-color: @accent2;
+		display: block;
+		color: #fff;
+	}
+
+	.mb2-pb-content-details {
+		height: 40px;
+	}
+
+	.mb2-pb-content-item-a {
+		position: relative;
+		overflow: hidden;
+	}
+
+	.mb2-pb-content-img {
+		margin-bottom: 0;
+	}
+
+
+	.mb2-pb-content1 {
+		position:absolute;
+		width: 100%;
+		text-align: center;
+		bottom: -40px;
+		.mb2_transition1(all, .25s);
+	}
+
+	.mb2-pb-content-title {
+		background-color: @accent1;
+		margin: 0;
+		padding: 12px;
+		color: #fff;
+		position: relative;
+		z-index: 1;
+
+		a {
+			color: #fff;
+
+			&:hover,
+			&:focus {
+				color: #fff;
+			}
+		}
+	}
+
+	.mb2-pb-content-details {
+		height: 40px;
+		line-height: 40px;
+		background-color: @accent2;
+		display: block;
+		color: #fff;
+		position: relative;
+		z-index: 1;
+	}
+
+
+	.mb2-pb-content-item:hover {
+		.mb2-pb-content1 {
+			bottom: 0;
+		}
+	}
+
+	.color {
+		.color-el {
+			display: block;
+			opacity: 1;
+		}
+
+		.mb2-pb-content-title {
+			background-color: transparent;
+		}
+	}
+
+	.mb2-pb-content-price {
+		margin: 20px -15px -20px -15px;
+		background-color: #fff;
+		padding: 10px 15px;
+		text-align: right;
+	}
+
+	.dir-rtl & {
+		.mb2-pb-content-price {
+			text-align: left;
+		}
+	}
+
+}
+
+
+
+
+/* ====================== PRE STYLE - COGNITIO 2 ====================== */
+
+.mb2-pb-content.cognitio2 {
+
+	.mb2-pb-content-item-b,
+	.mb2-pb-content-readmore {
+		display: none;
+	}
+
+	.mb2-pb-content-item-inner {
+		overflow: hidden;
+		position: relative;
+	}
+
+	.mb2-pb-content-img {
+		margin: 0;
+
+		img {
+			.mb2_transition1(all, .25s);
+		}
+	}
+
+	.mb2-pb-content-item:hover {
+		.mb2-pb-content-img {
+			img {
+				.mb2_trabsform_scale(1.15);
+			}
+		}
+	}
+
+	.mb2-pb-content1 {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+
+	.mb2-pb-content4 {
+		background-color: fade(@accent1,70%);
+		color: #fff;
+		padding: 15px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		text-align: center;
+
+
+		.mb2-pb-content-title {
+			color: #fff;
+			position: relative;
+			z-index: 1;
+
+			a {
+				color: #fff;
+
+				&:hover,
+				&:focus {
+					color: #fff;
+				}
+			}
+		}
+
+		.mb2-pb-content-details {
+			position: relative;
+			z-index: 1;
+		}
+	}
+
+	.item-even  {
+		.mb2-pb-content4 {
+			bottom: auto;
+			top: 0;
+		}
+	}
+
+	.color {
+		.mb2-pb-content4 {
+			background-color: transparent;
+
+			.color-el {
+				display: block;
+			}
+		}
+	}
+
+}
